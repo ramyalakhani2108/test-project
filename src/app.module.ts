@@ -8,6 +8,8 @@ import { AuthModule } from './auth/auth.module';
 import databaseConfig from './config/database.config';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { ResponseDataInterceptor } from './common/interceptors/response-data.interceptor';
+import { TasksModule } from './tasks/tasks.module';
+import { TaskChecklistsModule } from './task-checklists/task-checklists.module';
 
 const ENV = process.env.NODE_ENV;
 @Module({
@@ -33,6 +35,8 @@ const ENV = process.env.NODE_ENV;
     }),
     UsersModule,
     AuthModule,
+    TasksModule,
+    TaskChecklistsModule,
   ],
   controllers: [AppController],
   providers: [

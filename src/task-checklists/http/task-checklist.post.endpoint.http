@@ -1,0 +1,7 @@
+POST http://localhost:3000/task-checklists
+Content-Type: application/json
+
+{
+    "taskId" : 1,
+    "item" : "Chair"
+}
