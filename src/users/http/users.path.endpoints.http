@@ -1,0 +1,7 @@
+PATCH http://localhost:3000/users/6/profile
+Content-Type: application/json
+
+{
+    "firstName" : "Ramya",
+    "password": "Ramya123"
+}
